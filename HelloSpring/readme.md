@@ -150,6 +150,8 @@ SimpleCacheManager, ConcurrentMapCache,
 ### Lesson-009-JPA
 Demonstrates how to access MySQL database using Spring Data without using Spring Boot.
 
+In order to run this project you need MySQL database with full access configured in PersistenceConfig.java
+
 ##### Annotations:
 **`
 @EnableJpaRepositories,
