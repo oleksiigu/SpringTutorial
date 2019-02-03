@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>SpringTutorial</groupId>
+    <artifactId>HelloSpring</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- necessary for intellij to function -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>Lesson-001-Hello</module>
+        <module>Lesson-002-DI</module>
+        <module>Lesson-003-DI-Interfaces</module>
+        <module>Lesson-004-DI-Collections</module>
+        <module>Lesson-005-Scheduling</module>
+        <module>Lesson-006-Async</module>
+        <module>Lesson-007-Events</module>
+        <module>Lesson-008-Cache</module>
+        <module>Lesson-009-JPA</module>
+    </modules>
+
+</project>
