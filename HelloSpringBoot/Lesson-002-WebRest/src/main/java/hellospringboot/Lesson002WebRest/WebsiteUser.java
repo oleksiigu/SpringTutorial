@@ -1,4 +1,6 @@
-package hellospringboot.Lesson001RestRepo;
+package hellospringboot.Lesson002WebRest;
+
+import org.modelmapper.ModelMapper;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-class WebsiteUser {
+public class WebsiteUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,6 +16,10 @@ class WebsiteUser {
 
     private String name;
     private String email;
+
+    public static WebsiteUser from(NewUserDTO user) {
+        return new ModelMapper().map(user, WebsiteUser.class);
+    }
 
     public WebsiteUser() {
     }

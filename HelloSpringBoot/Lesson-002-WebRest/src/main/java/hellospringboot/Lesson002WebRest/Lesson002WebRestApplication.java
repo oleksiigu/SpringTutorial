@@ -1,12 +1,12 @@
-package hellospringboot.Lesson001RestRepo;
+package hellospringboot.Lesson002WebRest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-class Lesson001RestRepoApplication {
+class Lesson002WebRestApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Lesson001RestRepoApplication.class, args);
+        SpringApplication.run(Lesson002WebRestApplication.class, args);
     }
 }
 
