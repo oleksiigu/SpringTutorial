@@ -1,6 +1,7 @@
 # Java Spring Cloud
 
 ## Hystrix dashboard
+Home:   http://localhost:8091/hystrix
 Stream: http://localhost:8091/actuator/hystrix.stream
 
 ## References
