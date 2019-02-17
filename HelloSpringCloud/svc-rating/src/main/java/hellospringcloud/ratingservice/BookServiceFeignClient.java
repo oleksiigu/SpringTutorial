@@ -3,6 +3,6 @@ package hellospringcloud.ratingservice;
 import hellospringcloud.bookservice.BookService;
 import org.springframework.cloud.openfeign.FeignClient;
 
-@FeignClient("book-service")
+@FeignClient(name="book-service", fallbackFactory=BookServiceFallbackFactory.class)
 public interface BookServiceFeignClient extends BookService {
 }
