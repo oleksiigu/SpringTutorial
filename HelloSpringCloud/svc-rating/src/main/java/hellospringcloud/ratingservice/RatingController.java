@@ -27,6 +27,7 @@ public class RatingController {
     private CacheManager cacheManager;
 
     @GetMapping("")
+    @CachePut("books")
     public List<RatedBook> findAllRatings() {
         log.info("findAllRatings");
         Random rnd = new Random();

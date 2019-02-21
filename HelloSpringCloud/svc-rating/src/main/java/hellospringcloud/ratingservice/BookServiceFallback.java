@@ -10,10 +10,10 @@ import java.util.concurrent.ConcurrentMap;
 
 public class BookServiceFallback implements BookServiceFeignClient {
 
-    private CacheManager cacheManager;
+    private final BookRepositoryCache cache;
 
-    public BookServiceFallback(CacheManager cacheManager) {
-        this.cacheManager = cacheManager;
+    BookServiceFallback(BookRepositoryCache cache) {
+        this.cache = cache;
     }
 
     @Override

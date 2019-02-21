@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class BookServiceFallbackFactory implements FallbackFactory<BookServiceFeignClient> {
 
     @Autowired
-    private CacheManager cacheManager;
+    private BookRepositoryCache cache;
 
     @Override
     public BookServiceFeignClient create(Throwable throwable) {
