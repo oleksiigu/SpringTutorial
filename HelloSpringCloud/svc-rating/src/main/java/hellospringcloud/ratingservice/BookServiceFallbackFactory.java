@@ -2,7 +2,6 @@ package hellospringcloud.ratingservice;
 
 import feign.hystrix.FallbackFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.CacheManager;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,6 +12,6 @@ public class BookServiceFallbackFactory implements FallbackFactory<BookServiceFe
 
     @Override
     public BookServiceFeignClient create(Throwable throwable) {
-        return new BookServiceFallback(cacheManager);
+        return new BookServiceFallback(cache);
     }
 }
